@@ -1,0 +1,17 @@
+<svg version="1.1" viewBox="0.0 0.0 450.0 450.0" fill="none" stroke="none" stroke-linecap="square" stroke-miterlimit="10" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+	<mask id="mask">
+		<circle cx="225" cy="225" r="225" fill="white" />
+	</mask>
+	<circle cx="225" cy="225" r="225" fill="#ffcf4c" />
+	<path mask="url(#mask)" fill="#3f5dc2" d="M 0 100 C 300 150 450 450 450 450 L 100 450 M 100 450 C 200 200 0 110 0 100 Z" fill-rule="evenodd" />
+	<path mask="url(#mask)" fill="#849bdd" d="M 0 90 C 300 150 450 450 450 450 L 250 450 M 250 450 C 275 200 0 100 0 90 Z" fill-rule="evenodd" />
+	<!--
+	<path mask="url(#mask)" fill="#4f70ce" d="M 0 100 C 300 150 450 450 450 450 L 100 450 M 100 450 C 200 200 0 110 0 100 Z" fill-rule="evenodd" />
+	<path mask="url(#mask)" fill="#4f70ce" d="M 0 90 C 300 150 450 450 450 450 L 250 450 M 250 450 C 275 200 0 100 0 90 Z" fill-rule="evenodd" />
+	<circle mask="url(#mask)" cx="150" cy="410" r="50" fill="white" />
+	<circle mask="url(#mask)" cx="200" cy="402" r="50" fill="white" />
+	<circle mask="url(#mask)" cx="250" cy="396" r="50" fill="white" />
+	<circle mask="url(#mask)" cx="300" cy="388" r="50" fill="white" />
+	<circle mask="url(#mask)" cx="350" cy="380" r="50" fill="white" />
+	-->
+</svg>

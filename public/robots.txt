@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://smhost-template-coming-soon.springmicrohost.com/sitemap-index.xml
