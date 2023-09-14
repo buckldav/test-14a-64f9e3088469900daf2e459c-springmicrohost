@@ -1,0 +1,16 @@
+---
+import Layout from "@/layouts/Layout.astro"
+import json from "@/content/forms/contact.json";
+import JSONForm from "@/components/forms";
+
+
+---
+
+<Layout title="Contact" description="Contact us.">
+<h1 class="text-center my-2">Contact</h1>
+<div class="px-3 mx-auto w-full max-w-lg mb-2">
+  <JSONForm json={json} env={Object.fromEntries(Object.entries(import.meta.env).filter(([k,v])=> k.indexOf("PUBLIC_") === 0))} client:load />
+</div>
+</Layout>
+
+  

@@ -1,0 +1,52 @@
+---
+import { SEO } from "astro-seo";
+import "@/base.css";
+
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+
+const resolvedImageWithDomain = new URL(
+  "/opengraph.jpg",
+  Astro.site
+).toString();
+
+const { title, description = "This is the best site in the whole multiverse." } = Astro.props;
+const makeTitle = title
+  ? title + " | " + "My Site"
+  : "My Site";
+---
+
+<!DOCTYPE html>
+<html lang="en" data-theme="mytheme">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <SEO
+      title={makeTitle}
+      description={description}
+      canonical={canonicalURL}
+      openGraph={{
+        basic: {
+          url: canonicalURL,
+          type: "website",
+          title: makeTitle,
+          image: resolvedImageWithDomain,
+        },
+        image: {
+          alt: makeTitle + " Screenshot",
+        },
+      }}
+    />
+    
+    
+    <meta name="generator" content={Astro.generator} />
+    <slot name="head" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
